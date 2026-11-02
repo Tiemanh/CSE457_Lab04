@@ -2,7 +2,7 @@
 
 Dự án hoàn chỉnh các mục thực hành A-G của Lab 4. Báo cáo chính thức được đặt tại `Lab04.docx` và `Lab04.pdf`. Mọi audio, bảng và hình dùng trong báo cáo được sinh và kiểm chứng từ mã nguồn trong repository.
 
-> Lưu ý: các điểm tự nhiên/liên tục trong kết quả là chỉ số proxy tự động, không phải MOS người nghe thật.
+> Lưu ý: các điểm tự nhiên/liên tục trong kết quả là chỉ số proxy tự động, không phải MOS.
 
 ## Chạy toàn bộ bài
 
@@ -19,7 +19,7 @@ Chương trình chạy lần lượt:
 5. Đo F0 bằng chu kỳ và autocorrelation; thử duration 0.8/1.0/1.2 và pitch -2/0/+2 semitone.
 6. Chạy HMM demo ở chế độ generation, xuất state sequence, F0/F1/F2/energy trajectory và waveform minh họa.
 7. Chạy model neural TTS tiếng Việt MMS-VITS từ file cục bộ với `local_files_only=True`, sinh ba câu và đo latency 5 lần/câu.
-8. Tạo gói nghe mù, bảng so sánh khách quan và template ghi điểm nghe.
+8. Tạo bảng so sánh khách quan và đánh giá proxy tự động bằng PhoWhisper cùng các chỉ số tín hiệu.
 
 ## Môi trường
 
@@ -45,7 +45,7 @@ Chuỗi số được đọc từng chữ số theo yêu cầu của miền hẹ
 - `audio_output/S01..S03/`: kết quả ba backend cho cùng ba câu
 - `audio_output/experiments/`: cross-fade, pitch, duration và HMM scaling
 - `figures/`: 15 hình đã sẵn sàng cho báo cáo
-- `results/`: cost, latency, state/trajectory, validation, manifest và listening-test template
+- `results/`: cost, latency, state/trajectory, validation và kết quả đánh giá proxy tự động
 
 ## Giới hạn cần công bố
 
@@ -53,11 +53,7 @@ Inventory 48 word-unit là giọng tổng hợp `vi-VN-HoaiMyNeural`, không ph�
 
 HMM backend là mô hình tham số có hướng dẫn cho mục quan sát state/trajectory. Waveform HMM là resynthesis minh họa từ F0, formant và energy, không phải hệ HTS đã huấn luyện từ corpus lớn.
 
-Điểm intelligibility, naturalness và continuity phải do người nghe thật cung cấp. Dự án không tạo số liệu chủ quan giả; `results/ratings_template.csv` và các clip đã được chuẩn bị để hoàn thành phần này.
-
-Mở `listening_test.html` để thu ratings. Sau khi đặt các CSV vào `results/ratings_completed/`, chạy `python -X utf8 process_ratings.py` để tự động tính intelligibility/MOS, cập nhật bảng so sánh và sinh biểu đồ cuối.
-
-Nếu không tổ chức người nghe, chạy `python -X utf8 automated_proxy_evaluation.py`. Kết quả dùng PhoWhisper cho intelligibility và heuristic tín hiệu cho naturalness/continuity. Các cột được ghi rõ là proxy và không được gọi là human MOS.
+Chạy `python -X utf8 automated_proxy_evaluation.py` để đánh giá. Kết quả dùng PhoWhisper cho độ hiểu ASR và heuristic tín hiệu cho naturalness/continuity. Các cột được ghi rõ là proxy tự động, không phải MOS.
 
 ## Kiểm chứng
 

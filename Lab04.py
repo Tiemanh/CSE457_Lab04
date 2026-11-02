@@ -57,7 +57,6 @@ def ensure_dirs() -> None:
     (AUDIO_DIR / "experiments" / "crossfade").mkdir(parents=True, exist_ok=True)
     (AUDIO_DIR / "experiments" / "prosody").mkdir(parents=True, exist_ok=True)
     (AUDIO_DIR / "experiments" / "hmm").mkdir(parents=True, exist_ok=True)
-    (AUDIO_DIR / "blind_listening").mkdir(parents=True, exist_ok=True)
 
 
 def normalize_text(text: str) -> list[str]:
@@ -981,56 +980,25 @@ def directory_size(path: Path) -> int:
     return sum(item.stat().st_size for item in path.rglob("*") if item.is_file())
 
 
-def build_evaluation_package(latency_summary: pd.DataFrame, hmm_latency_summary: pd.DataFrame) -> None:
-    rng = random.Random(SEED)
-    systems = ["concat", "hmm", "neural"]
-    source_map = {
-        "concat": lambda sid: AUDIO_DIR / sid / "best_concat.wav",
-        "hmm": lambda sid: AUDIO_DIR / sid / "hmm_tts.wav",
-        "neural": lambda sid: AUDIO_DIR / sid / "neural_tts.wav",
-    }
-    entries = [(sid, system) for sid in SENTENCES for system in systems]
-    rng.shuffle(entries)
-    manifest_rows, rating_rows = [], []
-    for index, (sid, system) in enumerate(entries, start=1):
-        clip_id = f"C{index:02d}"
-        source = source_map[system](sid)
-        available = source.exists()
-        if available:
-            destination = AUDIO_DIR / "blind_listening" / f"{clip_id}.wav"
-            shutil.copy2(source, destination)
-        manifest_rows.append({
-            "clip_id": clip_id, "sentence_id": sid, "system": system,
-            "source_file": str(source.relative_to(ROOT)), "available": available,
-        })
-        rating_rows.append({
-            "listener_id": "", "clip_id": clip_id, "transcription": "",
-            "naturalness_1_5": "", "continuity_1_5": "", "notes": "",
-        })
-    pd.DataFrame(manifest_rows).to_csv(RESULT_DIR / "blind_manifest_private.csv", index=False, encoding="utf-8-sig")
-    pd.DataFrame(rating_rows).to_csv(RESULT_DIR / "ratings_template.csv", index=False, encoding="utf-8-sig")
-
+def build_objective_comparison(latency_summary: pd.DataFrame, hmm_latency_summary: pd.DataFrame) -> None:
     latency_map = latency_summary.set_index("sentence_id")["latency_mean_s"].to_dict()
     concat_latency_summary = pd.read_csv(RESULT_DIR / "concat_latency_summary.csv")
     concat_latency_mean = float(concat_latency_summary["latency_mean_s"].mean())
     hmm_latency_mean = float(hmm_latency_summary["latency_mean_s"].mean())
     comparison = pd.DataFrame([
         {
-            "method": "Concatenation", "intelligibility_percent": "PENDING_LISTENING_TEST",
-            "naturalness_mos": "PENDING_LISTENING_TEST", "continuity_mos": "PENDING_LISTENING_TEST",
+            "method": "Concatenation",
             "latency_mean_s": concat_latency_mean,
             "storage_bytes": directory_size(UNITS_DIR),
             "notes": "Best unit selection + cross-fade",
         },
         {
-            "method": "HMM/parametric demo", "intelligibility_percent": "PENDING_LISTENING_TEST",
-            "naturalness_mos": "PENDING_LISTENING_TEST", "continuity_mos": "PENDING_LISTENING_TEST",
+            "method": "HMM/parametric demo",
             "latency_mean_s": hmm_latency_mean, "storage_bytes": (RESULT_DIR / "hmm_tracks.csv").stat().st_size,
             "notes": "Guided state/trajectory demo; waveform is illustrative",
         },
         {
-            "method": "Neural MMS-VITS", "intelligibility_percent": "PENDING_LISTENING_TEST",
-            "naturalness_mos": "PENDING_LISTENING_TEST", "continuity_mos": "PENDING_LISTENING_TEST",
+            "method": "Neural MMS-VITS",
             "latency_mean_s": float(np.mean(list(latency_map.values()))),
             "storage_bytes": directory_size(MODEL_DIR),
             "notes": "facebook/mms-tts-vie, local_files_only=True",
@@ -1102,7 +1070,7 @@ def create_experiment_summary() -> None:
             "concat_latency_mean_s": float(concat_latency["latency_mean_s"].mean()),
             "hmm_latency_mean_s": float(hmm_latency["latency_mean_s"].mean()),
             "neural_latency_mean_s": float(neural_latency["latency_mean_s"].mean()),
-            "subjective_scores": "PENDING_REAL_LISTENERS",
+            "evaluation_scope": "OBJECTIVE_AND_AUTOMATED_PROXY_ONLY",
         },
     }
     proxy_path = RESULT_DIR / "automated_proxy_summary.csv"
@@ -1136,7 +1104,7 @@ def create_run_manifest(start_time: float) -> None:
         "outputs": files,
         "limitations": [
             "Inventory is synthetic neural speech and must be disclosed as such.",
-            "Subjective MOS/intelligibility require real listeners; template is prepared but scores are not fabricated.",
+            "Evaluation scope is limited to ASR intelligibility and signal-based automated proxies.",
             "HMM waveform is an educational parametric resynthesis; the required state/trajectory analysis is complete.",
         ],
     }
@@ -1158,8 +1126,8 @@ def main() -> None:
     hmm_latency_summary = run_hmm(inventory)
     print("[F] Neural TTS pretrained offline")
     latency_summary = run_neural_tts()
-    print("[G] Gói đánh giá mù và bảng so sánh")
-    build_evaluation_package(latency_summary, hmm_latency_summary)
+    print("[G] Bảng so sánh khách quan và đánh giá proxy tự động")
+    build_objective_comparison(latency_summary, hmm_latency_summary)
     create_experiment_summary()
     create_run_manifest(start)
     print(f"Hoàn tất sau {time.perf_counter() - start:.1f} giây")

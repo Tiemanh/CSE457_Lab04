@@ -2,7 +2,7 @@
   "lab": "CSE457 Lab 4 - Tong hop tieng noi",
   "seed": 457,
   "sample_rate": 16000,
-  "runtime_seconds": 61.20238849997986,
+  "runtime_seconds": 0.06796219997340813,
   "sentences": {
     "S01": "Mời khách hàng số 23 đến quầy 5.",
     "S02": "Mời khách hàng số 406 đến quầy 7.",
@@ -28,51 +28,6 @@
       "path": "audio_output\\raw_concat.wav",
       "bytes": 102510,
       "sha256": "2d57d5af9d96733f9f9a58dcb7ba49e101a01657412afc1ffad02014925fd2d4"
-    },
-    {
-      "path": "audio_output\\blind_listening\\C01.wav",
-      "bytes": 99564,
-      "sha256": "ca6f89b7804f84998b0bc6de2605f18eb6fa18416ac8b2fbc2b73e75be35c693"
-    },
-    {
-      "path": "audio_output\\blind_listening\\C02.wav",
-      "bytes": 102284,
-      "sha256": "a2bfba149b8c7a659cbe98f22d5db6f17b23519afd27b5adf30af2ad502777f3"
-    },
-    {
-      "path": "audio_output\\blind_listening\\C03.wav",
-      "bytes": 98190,
-      "sha256": "1ac649991c817af0c7fd55fcbe47c3ea79fb1759746f9e027fb94e81cdab67a6"
-    },
-    {
-      "path": "audio_output\\blind_listening\\C04.wav",
-      "bytes": 103084,
-      "sha256": "c34ce418cb7d1f2d341b05dc8a2502d0217f2478d647cab46c527ab7704e1080"
-    },
-    {
-      "path": "audio_output\\blind_listening\\C05.wav",
-      "bytes": 108568,
-      "sha256": "2845285130af450c08f2e53cba6627ece380d40a2c3ceaf05367a394306fe7a9"
-    },
-    {
-      "path": "audio_output\\blind_listening\\C06.wav",
-      "bytes": 102444,
-      "sha256": "d9d50273a755653ed248210e19c9d401253ecad7f56411d7827a97a08176d020"
-    },
-    {
-      "path": "audio_output\\blind_listening\\C07.wav",
-      "bytes": 109484,
-      "sha256": "02c1b333bd6749943bd9b6cb02fe9ab76d296dd9fc9c5bc9f0fa60d8bb233e05"
-    },
-    {
-      "path": "audio_output\\blind_listening\\C08.wav",
-      "bytes": 102444,
-      "sha256": "dbf91471cc4d1a25012bc92335fd129b7191ce9a69983b29feb4fc85fadc7010"
-    },
-    {
-      "path": "audio_output\\blind_listening\\C09.wav",
-      "bytes": 95276,
-      "sha256": "d32b9ababa265346a4fbfd99068cbd52fb86bce716c836539e9592f128da8321"
     },
     {
       "path": "audio_output\\S01\\best_concat.wav",
@@ -281,8 +236,8 @@
     },
     {
       "path": "figures\\13_backend_objective_comparison.png",
-      "bytes": 46615,
-      "sha256": "1ab3dc9ac8fdc81dc699f50246270334bc9f6e76e98a748476725f89e6b1038c"
+      "bytes": 45206,
+      "sha256": "b1180010e006528a35df84fd718b493f0a57a7591b1b706ad5dbc0da306ee049"
     },
     {
       "path": "figures\\14_automated_proxy_evaluation.png",
@@ -291,8 +246,8 @@
     },
     {
       "path": "results\\automated_proxy_clip_scores.csv",
-      "bytes": 2319,
-      "sha256": "c6429b2ce81b438421f10e5f31a11067336231637363a85486a89ed0ad3fc766"
+      "bytes": 2373,
+      "sha256": "2eef67c16bc84da5211ca48ec6d5dd770ebc1d6b9f7f08b15d88102305b3a93d"
     },
     {
       "path": "results\\automated_proxy_summary.csv",
@@ -301,18 +256,13 @@
     },
     {
       "path": "results\\backend_comparison.csv",
-      "bytes": 576,
-      "sha256": "71bb52b0253fe75e3acb1b1fd1b5dae905a8d19e0aa703bbd11aea9de60363d3"
+      "bytes": 317,
+      "sha256": "112a7af28f04d63557675128643dc90314579ace4432f44332b9dbf37940b440"
     },
     {
       "path": "results\\backend_comparison_automated_proxy.csv",
-      "bytes": 637,
-      "sha256": "abb9da61d72e47b2eabcdcdaa8aff394aee99d062656a04b5f163f2688d66481"
-    },
-    {
-      "path": "results\\blind_manifest_private.csv",
-      "bytes": 515,
-      "sha256": "04e85b41a9fc25f4d35514af660676a28b94362208556955aa6268c79a9fb872"
+      "bytes": 638,
+      "sha256": "998a3ee1d14091aa7a0521ba34e5f3cffe980d6e72865de164ef71ce27920cbe"
     },
     {
       "path": "results\\candidate_costs.csv",
@@ -321,13 +271,13 @@
     },
     {
       "path": "results\\concat_latency_runs.csv",
-      "bytes": 482,
-      "sha256": "7af27d5cabdd4513709066ce5a3bb0022a197a1f640e44192db874bdc28eeee8"
+      "bytes": 492,
+      "sha256": "e3608a8e139114ae5e1cf77f8259e55ed31c44806b45986b50b55aab5dcf8d60"
     },
     {
       "path": "results\\concat_latency_summary.csv",
-      "bytes": 351,
-      "sha256": "400f8a264b04530494e9f5bb787723326dc79e3f17cbe10ac7ed216dba684a74"
+      "bytes": 364,
+      "sha256": "1f20a9edb429d5559db4acaad1afe48553340cae0985abaafacf9f5d77c7a4ca"
     },
     {
       "path": "results\\crossfade_results.csv",
@@ -341,18 +291,18 @@
     },
     {
       "path": "results\\experiment_summary.json",
-      "bytes": 1962,
-      "sha256": "5123817daecd8a8382419427e5009a7db48d6894d8b224dd4355a90e8654bb2d"
+      "bytes": 1974,
+      "sha256": "c35133240f7798faacce9882e3ca022a861be61271a7c69d2bb8f8ef323f1ced"
     },
     {
       "path": "results\\hmm_latency_runs.csv",
-      "bytes": 424,
-      "sha256": "a540f109f16117d4032b4705f7276c7c8c25d1cdbe5b47024c8deeed5c6124aa"
+      "bytes": 433,
+      "sha256": "b1aa8025c806686b2ab99d1bf5e6b9fbfd3f364f2a7f41271c493697036e2296"
     },
     {
       "path": "results\\hmm_latency_summary.csv",
-      "bytes": 326,
-      "sha256": "9cb454830d6e16157bed67f0fc3ed8a91de31021abdfefd3e8ea03ecbab960a2"
+      "bytes": 332,
+      "sha256": "fe2c9aa826d86adaa7a80bbd21a917b870a7aa9121183af6046f2d347a13dd31"
     },
     {
       "path": "results\\hmm_states_S01.csv",
@@ -401,13 +351,13 @@
     },
     {
       "path": "results\\neural_latency_runs.csv",
-      "bytes": 1695,
-      "sha256": "9ffd362a73fe68e329a412dba759d08725bdbd580647355a73caec1f3496afaa"
+      "bytes": 1690,
+      "sha256": "0461e28c57600025d60a23a069a9768eee57b7b881548d644300df9696323f34"
     },
     {
       "path": "results\\neural_latency_summary.csv",
-      "bytes": 609,
-      "sha256": "355c35ae88daac0eddda7adab6d570791abec37cbea66d6e08cf7aa42546d441"
+      "bytes": 606,
+      "sha256": "440cc12a45ad8365800cb154bf53d6f58ae2a76b789788baef4ffeea57c4b757"
     },
     {
       "path": "results\\normalized_sentences.csv",
@@ -416,8 +366,8 @@
     },
     {
       "path": "results\\project_validation.json",
-      "bytes": 115,
-      "sha256": "6f1af08c587c3d65ae7052496b7b3550a947e8bcc981a3cd70eaf8f35524f513"
+      "bytes": 89,
+      "sha256": "369de2f33c244b4d5f675368ef97bdcb28e318327d4184306be25a858fd93035"
     },
     {
       "path": "results\\prosody_results.csv",
@@ -425,29 +375,19 @@
       "sha256": "aff588dae2d86f278a068074fb647d25f40c186d2d1d76a8652dd0ef41c2485b"
     },
     {
-      "path": "results\\ratings_template.csv",
-      "bytes": 165,
-      "sha256": "99d91e178dbf66272972e887b952b8627c41c837294c7036458f4fec44dc26b4"
-    },
-    {
       "path": "results\\run_manifest.json",
-      "bytes": 15240,
-      "sha256": "e85cf9430d192b99c61c65c01eb4241b3c19dea9482214d0ebeb3aa97a6f995a"
+      "bytes": 13664,
+      "sha256": "1b4e52a5429e11ecf130ed35ab8036e44a92ae09e0939a281684ca264561b7c3"
     },
     {
       "path": "results\\unit_selection_comparison.csv",
       "bytes": 255,
       "sha256": "637e9cd6d411c75e1b391546c591a3d124a67a3ad88ee0b3090aeae5bcaf0e7e"
-    },
-    {
-      "path": "results\\ratings_completed\\.gitkeep",
-      "bytes": 1,
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
     }
   ],
   "limitations": [
     "Inventory is synthetic neural speech and must be disclosed as such.",
-    "Subjective MOS/intelligibility require real listeners; template is prepared but scores are not fabricated.",
+    "Evaluation scope is limited to ASR intelligibility and signal-based automated proxies.",
     "HMM waveform is an educational parametric resynthesis; the required state/trajectory analysis is complete."
   ]
 }

@@ -15,7 +15,7 @@
 11. `figures/11_hmm_parameter_scaling.png` - HMM duration/F0 scaling.
 12-14. `figures/12_neural_spectrogram_S01..S03.png` - Acoustic representation của neural model.
 15. `figures/13_backend_objective_comparison.png` - Latency và dung lượng.
-16. `figures/14_automated_proxy_evaluation.png` - Đánh giá tự động thay thế khi không có người nghe; phải ghi rõ không phải MOS.
+16. `figures/14_automated_proxy_evaluation.png` - Đánh giá tự động bằng ASR và các chỉ số proxy; phải ghi rõ không phải MOS.
 
 PDF chỉ yêu cầu ít nhất 5 hình. Nên chọn khoảng 7-9 hình quan trọng để báo cáo không quá dày.
 
@@ -39,8 +39,7 @@ PDF chỉ yêu cầu ít nhất 5 hình. Nên chọn khoảng 7-9 hình quan tr�
 - `audio_output/experiments/crossfade/`: bốn mức cross-fade.
 - `audio_output/experiments/prosody/`: sáu biến thể duration/pitch.
 - `audio_output/experiments/hmm/`: năm biến thể HMM.
-- `audio_output/blind_listening/`: chín clip đã đổi tên mù.
 
 ## Lựa chọn đánh giá
 
-Phương án đúng theo gợi ý của đề là mời 5-10 người nghe. Nếu không tổ chức người nghe, dự án đã có `results/backend_comparison_automated_proxy.csv` và hình 14. Trong báo cáo phải gọi đây là đánh giá tự động/proxy, không gọi là MOS hoặc listening test của con người. Sau đó chỉ còn viết báo cáo 5-8 trang và trả lời 10 câu hỏi lý thuyết.
+Dự án sử dụng `results/backend_comparison_automated_proxy.csv` và hình 14. Trong báo cáo phải gọi đây là đánh giá tự động/proxy, không gọi là MOS. Phần báo cáo trình bày kết quả trong phạm vi thí nghiệm và nêu rõ giới hạn của chỉ số proxy.

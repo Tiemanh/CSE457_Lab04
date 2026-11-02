@@ -62,7 +62,21 @@ asr = pipeline(
     device=device,
 )
 
-manifest = pd.read_csv(RESULTS / "blind_manifest_private.csv")
+source_map = {
+    "concat": "best_concat.wav",
+    "hmm": "hmm_tts.wav",
+    "neural": "neural_tts.wav",
+}
+manifest = pd.DataFrame([
+    {
+        "clip_id": f"{sentence_id}_{system}",
+        "sentence_id": sentence_id,
+        "system": system,
+        "source_file": str(Path("audio_output") / sentence_id / filename),
+    }
+    for sentence_id in ("S01", "S02", "S03")
+    for system, filename in source_map.items()
+])
 sentences = pd.read_csv(RESULTS / "normalized_sentences.csv").set_index("sentence_id")
 rows = []
 for _, item in manifest.iterrows():

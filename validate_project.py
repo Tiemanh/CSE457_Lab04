@@ -44,7 +44,7 @@ required_results = [
     "inventory_validation.csv", "normalized_sentences.csv", "candidate_costs.csv",
     "unit_selection_comparison.csv", "crossfade_results.csv", "prosody_results.csv",
     "hmm_state_sequence.csv", "hmm_tracks.csv", "neural_latency_summary.csv",
-    "backend_comparison.csv", "ratings_template.csv", "run_manifest.json",
+    "backend_comparison.csv", "run_manifest.json",
     "concat_latency_summary.csv", "hmm_latency_summary.csv", "experiment_summary.json",
 ]
 for filename in required_results:
@@ -53,8 +53,6 @@ for filename in required_results:
 require(ROOT / "models" / "mms-tts-vie" / "model.safetensors")
 require(ROOT / "models" / "mms-tts-vie" / "vocab.json")
 require(ROOT / "models" / "phowhisper-tiny" / "pytorch_model.bin")
-require(ROOT / "listening_test.html")
-require(ROOT / "process_ratings.py")
 require(ROOT / "automated_proxy_evaluation.py")
 require(ROOT / "results" / "automated_proxy_summary.csv")
 require(ROOT / "results" / "backend_comparison_automated_proxy.csv")
@@ -75,7 +73,6 @@ result = {
     "status": "PASS" if not errors else "FAIL",
     "unit_wav_count": len(units),
     "figure_count": len(figures),
-    "blind_clip_count": len(list((ROOT / "audio_output" / "blind_listening").glob("*.wav"))),
     "errors": errors,
 }
 (ROOT / "results" / "project_validation.json").write_text(

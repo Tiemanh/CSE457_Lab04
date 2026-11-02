@@ -31,20 +31,20 @@
   "E_hmm": {
     "states_S01": 27,
     "frames_S01": 309,
-    "latency_mean_s": 0.24103593332692977
+    "latency_mean_s": 0.06666324666778863
   },
   "F_neural": {
     "model": "facebook/mms-tts-vie",
     "offline": true,
     "device": "cuda",
-    "latency_mean_s": 0.09073357333739596,
+    "latency_mean_s": 0.08827120000108453,
     "model_size_mb": 138.548903465271
   },
   "G_evaluation": {
-    "concat_latency_mean_s": 0.04152926666817314,
-    "hmm_latency_mean_s": 0.24103593332692977,
-    "neural_latency_mean_s": 0.09073357333739596,
-    "subjective_scores": "PENDING_REAL_LISTENERS"
+    "concat_latency_mean_s": 0.009157546671728268,
+    "hmm_latency_mean_s": 0.06666324666778863,
+    "neural_latency_mean_s": 0.08827120000108453,
+    "evaluation_scope": "OBJECTIVE_AND_AUTOMATED_PROXY_ONLY"
   },
   "G_automated_proxy": {
     "concat": {
