@@ -1,6 +1,6 @@
 # CSE457_Lab04 - Tổng hợp tiếng nói
 
-Dự án hoàn chỉnh các mục thực hành A-G của Lab 4. Báo cáo chính thức được đặt tại `Lab04.docx` và `Lab04.pdf`. Mọi audio, bảng và hình dùng trong báo cáo được sinh và kiểm chứng từ mã nguồn trong repository.
+Báo cáo chính thức được đặt tại `Lab04.docx` và `Lab04.pdf`. Mọi audio, bảng và hình dùng trong báo cáo được sinh và kiểm chứng từ mã nguồn trong repository.
 
 > Lưu ý: các điểm tự nhiên/liên tục trong kết quả là chỉ số proxy tự động, không phải MOS.
 
