@@ -1,0 +1,10 @@
+﻿clip_id,sentence_id,system,source_file,available
+C01,S01,hmm,audio_output\S01\hmm_tts.wav,True
+C02,S03,concat,audio_output\S03\best_concat.wav,True
+C03,S01,concat,audio_output\S01\best_concat.wav,True
+C04,S03,hmm,audio_output\S03\hmm_tts.wav,True
+C05,S02,concat,audio_output\S02\best_concat.wav,True
+C06,S03,neural,audio_output\S03\neural_tts.wav,True
+C07,S02,hmm,audio_output\S02\hmm_tts.wav,True
+C08,S02,neural,audio_output\S02\neural_tts.wav,True
+C09,S01,neural,audio_output\S01\neural_tts.wav,True

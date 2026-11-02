@@ -1,0 +1,67 @@
+{
+  "A_inventory": {
+    "files": 48,
+    "labels": 16,
+    "all_pass": true,
+    "duration_range_s": [
+      0.193875,
+      0.426375
+    ],
+    "rms_range": [
+      0.0749998168826006,
+      0.0850001563863728
+    ]
+  },
+  "C_unit_selection": {
+    "mean_cost_reduction_percent": 28.20045196661042,
+    "dp_exhaustive_match": true,
+    "selected_crossfade_ms": 0,
+    "crossfade_observation": "Với inventory này, 0 ms có score thấp nhất; overlap dài làm tăng discontinuity do biên đã có silence sạch."
+  },
+  "D_prosody": {
+    "period_samples": 66,
+    "fs_over_np_hz": 242.42424242424244,
+    "frame_autocorrelation_f0_hz": 238.8059701492537,
+    "pitch_measured_hz": {
+      "-2": 213.33333333333331,
+      "0": 238.8059701492537,
+      "2": 268.9265536723164
+    }
+  },
+  "E_hmm": {
+    "states_S01": 27,
+    "frames_S01": 309,
+    "latency_mean_s": 0.24103593332692977
+  },
+  "F_neural": {
+    "model": "facebook/mms-tts-vie",
+    "offline": true,
+    "device": "cuda",
+    "latency_mean_s": 0.09073357333739596,
+    "model_size_mb": 138.548903465271
+  },
+  "G_evaluation": {
+    "concat_latency_mean_s": 0.04152926666817314,
+    "hmm_latency_mean_s": 0.24103593332692977,
+    "neural_latency_mean_s": 0.09073357333739596,
+    "subjective_scores": "PENDING_REAL_LISTENERS"
+  },
+  "G_automated_proxy": {
+    "concat": {
+      "intelligibility_asr_percent": 79.62962962962963,
+      "naturalness_proxy_1_5": 4.181481481481481,
+      "continuity_proxy_1_5": 3.466666666666667
+    },
+    "hmm": {
+      "intelligibility_asr_percent": 0.0,
+      "naturalness_proxy_1_5": 2.577777777777778,
+      "continuity_proxy_1_5": 3.088888888888889
+    },
+    "neural": {
+      "intelligibility_asr_percent": 76.66666666666667,
+      "naturalness_proxy_1_5": 2.907407407407408,
+      "continuity_proxy_1_5": 3.111111111111111
+    },
+    "disclosure": "AUTOMATED_PROXY_NOT_HUMAN_MOS"
+  }
+}

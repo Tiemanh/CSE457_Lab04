@@ -1,0 +1,4 @@
+﻿method,intelligibility_percent,naturalness_mos,continuity_mos,latency_mean_s,storage_bytes,notes
+Concatenation,PENDING_LISTENING_TEST,PENDING_LISTENING_TEST,PENDING_LISTENING_TEST,0.04152926666817314,514098,Best unit selection + cross-fade
+HMM/parametric demo,PENDING_LISTENING_TEST,PENDING_LISTENING_TEST,PENDING_LISTENING_TEST,0.24103593332692982,55195,Guided state/trajectory demo; waveform is illustrative
+Neural MMS-VITS,PENDING_LISTENING_TEST,PENDING_LISTENING_TEST,PENDING_LISTENING_TEST,0.090733573337396,145279055,"facebook/mms-tts-vie, local_files_only=True"

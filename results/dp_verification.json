@@ -1,0 +1,25 @@
+{
+  "tokens": [
+    "mời",
+    "khách",
+    "hàng",
+    "số"
+  ],
+  "exhaustive_cost": 4.684699353746537,
+  "dp_cost": 4.684699353746537,
+  "absolute_difference": 0.0,
+  "exhaustive_candidate_ids": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "dp_candidate_ids": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "pass": true,
+  "full_sentence_dp_cost": 11.46304925583952
+}

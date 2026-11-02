@@ -1,0 +1,453 @@
+{
+  "lab": "CSE457 Lab 4 - Tong hop tieng noi",
+  "seed": 457,
+  "sample_rate": 16000,
+  "runtime_seconds": 61.20238849997986,
+  "sentences": {
+    "S01": "Mời khách hàng số 23 đến quầy 5.",
+    "S02": "Mời khách hàng số 406 đến quầy 7.",
+    "S03": "Mời khách hàng số 189 đến quầy 0."
+  },
+  "outputs": [
+    {
+      "path": "audio_output\\best_concat.wav",
+      "bytes": 98190,
+      "sha256": "1ac649991c817af0c7fd55fcbe47c3ea79fb1759746f9e027fb94e81cdab67a6"
+    },
+    {
+      "path": "audio_output\\hmm_tts.wav",
+      "bytes": 99564,
+      "sha256": "ca6f89b7804f84998b0bc6de2605f18eb6fa18416ac8b2fbc2b73e75be35c693"
+    },
+    {
+      "path": "audio_output\\neural_tts.wav",
+      "bytes": 95276,
+      "sha256": "d32b9ababa265346a4fbfd99068cbd52fb86bce716c836539e9592f128da8321"
+    },
+    {
+      "path": "audio_output\\raw_concat.wav",
+      "bytes": 102510,
+      "sha256": "2d57d5af9d96733f9f9a58dcb7ba49e101a01657412afc1ffad02014925fd2d4"
+    },
+    {
+      "path": "audio_output\\blind_listening\\C01.wav",
+      "bytes": 99564,
+      "sha256": "ca6f89b7804f84998b0bc6de2605f18eb6fa18416ac8b2fbc2b73e75be35c693"
+    },
+    {
+      "path": "audio_output\\blind_listening\\C02.wav",
+      "bytes": 102284,
+      "sha256": "a2bfba149b8c7a659cbe98f22d5db6f17b23519afd27b5adf30af2ad502777f3"
+    },
+    {
+      "path": "audio_output\\blind_listening\\C03.wav",
+      "bytes": 98190,
+      "sha256": "1ac649991c817af0c7fd55fcbe47c3ea79fb1759746f9e027fb94e81cdab67a6"
+    },
+    {
+      "path": "audio_output\\blind_listening\\C04.wav",
+      "bytes": 103084,
+      "sha256": "c34ce418cb7d1f2d341b05dc8a2502d0217f2478d647cab46c527ab7704e1080"
+    },
+    {
+      "path": "audio_output\\blind_listening\\C05.wav",
+      "bytes": 108568,
+      "sha256": "2845285130af450c08f2e53cba6627ece380d40a2c3ceaf05367a394306fe7a9"
+    },
+    {
+      "path": "audio_output\\blind_listening\\C06.wav",
+      "bytes": 102444,
+      "sha256": "d9d50273a755653ed248210e19c9d401253ecad7f56411d7827a97a08176d020"
+    },
+    {
+      "path": "audio_output\\blind_listening\\C07.wav",
+      "bytes": 109484,
+      "sha256": "02c1b333bd6749943bd9b6cb02fe9ab76d296dd9fc9c5bc9f0fa60d8bb233e05"
+    },
+    {
+      "path": "audio_output\\blind_listening\\C08.wav",
+      "bytes": 102444,
+      "sha256": "dbf91471cc4d1a25012bc92335fd129b7191ce9a69983b29feb4fc85fadc7010"
+    },
+    {
+      "path": "audio_output\\blind_listening\\C09.wav",
+      "bytes": 95276,
+      "sha256": "d32b9ababa265346a4fbfd99068cbd52fb86bce716c836539e9592f128da8321"
+    },
+    {
+      "path": "audio_output\\S01\\best_concat.wav",
+      "bytes": 98190,
+      "sha256": "1ac649991c817af0c7fd55fcbe47c3ea79fb1759746f9e027fb94e81cdab67a6"
+    },
+    {
+      "path": "audio_output\\S01\\hmm_tts.wav",
+      "bytes": 99564,
+      "sha256": "ca6f89b7804f84998b0bc6de2605f18eb6fa18416ac8b2fbc2b73e75be35c693"
+    },
+    {
+      "path": "audio_output\\S01\\neural_tts.wav",
+      "bytes": 95276,
+      "sha256": "d32b9ababa265346a4fbfd99068cbd52fb86bce716c836539e9592f128da8321"
+    },
+    {
+      "path": "audio_output\\S01\\raw_concat.wav",
+      "bytes": 102510,
+      "sha256": "2d57d5af9d96733f9f9a58dcb7ba49e101a01657412afc1ffad02014925fd2d4"
+    },
+    {
+      "path": "audio_output\\S02\\best_concat.wav",
+      "bytes": 108568,
+      "sha256": "2845285130af450c08f2e53cba6627ece380d40a2c3ceaf05367a394306fe7a9"
+    },
+    {
+      "path": "audio_output\\S02\\hmm_tts.wav",
+      "bytes": 109484,
+      "sha256": "02c1b333bd6749943bd9b6cb02fe9ab76d296dd9fc9c5bc9f0fa60d8bb233e05"
+    },
+    {
+      "path": "audio_output\\S02\\neural_tts.wav",
+      "bytes": 102444,
+      "sha256": "dbf91471cc4d1a25012bc92335fd129b7191ce9a69983b29feb4fc85fadc7010"
+    },
+    {
+      "path": "audio_output\\S02\\raw_concat.wav",
+      "bytes": 112762,
+      "sha256": "4f626a765ff8b29cf4965473fa4308ea1cea6ced1f66840cbc749aeeaeb519b5"
+    },
+    {
+      "path": "audio_output\\S03\\best_concat.wav",
+      "bytes": 102284,
+      "sha256": "a2bfba149b8c7a659cbe98f22d5db6f17b23519afd27b5adf30af2ad502777f3"
+    },
+    {
+      "path": "audio_output\\S03\\hmm_tts.wav",
+      "bytes": 103084,
+      "sha256": "c34ce418cb7d1f2d341b05dc8a2502d0217f2478d647cab46c527ab7704e1080"
+    },
+    {
+      "path": "audio_output\\S03\\neural_tts.wav",
+      "bytes": 102444,
+      "sha256": "d9d50273a755653ed248210e19c9d401253ecad7f56411d7827a97a08176d020"
+    },
+    {
+      "path": "audio_output\\S03\\raw_concat.wav",
+      "bytes": 105782,
+      "sha256": "efcf76fe5ffabdfbf0e230573730be1584cf90c2707a826c7aa7a0099bf2db8f"
+    },
+    {
+      "path": "audio_output\\experiments\\crossfade\\S01_xfade_00ms.wav",
+      "bytes": 98190,
+      "sha256": "1ac649991c817af0c7fd55fcbe47c3ea79fb1759746f9e027fb94e81cdab67a6"
+    },
+    {
+      "path": "audio_output\\experiments\\crossfade\\S01_xfade_05ms.wav",
+      "bytes": 96910,
+      "sha256": "8f8fbf26d2effafc8c9e99a4aa74eb93c1b9d9668011c34442f06e1a4367dee9"
+    },
+    {
+      "path": "audio_output\\experiments\\crossfade\\S01_xfade_15ms.wav",
+      "bytes": 94350,
+      "sha256": "58b236c4eed7e3d4c86ae7a042c1daf6cf81fdea2713813f5bb2e9a8884f9350"
+    },
+    {
+      "path": "audio_output\\experiments\\crossfade\\S01_xfade_30ms.wav",
+      "bytes": 90510,
+      "sha256": "bfd40b91dd0249f0970336f281cf690082d5eebb349f5c911504003af7ed4872"
+    },
+    {
+      "path": "audio_output\\experiments\\hmm\\hmm_base.wav",
+      "bytes": 99564,
+      "sha256": "ca6f89b7804f84998b0bc6de2605f18eb6fa18416ac8b2fbc2b73e75be35c693"
+    },
+    {
+      "path": "audio_output\\experiments\\hmm\\hmm_duration_0.8.wav",
+      "bytes": 79724,
+      "sha256": "c6015efd70a089b3758e84e43286daa761b1bb908ccfd1f30e74b05b1f5be1ca"
+    },
+    {
+      "path": "audio_output\\experiments\\hmm\\hmm_duration_1.2.wav",
+      "bytes": 119084,
+      "sha256": "0c68ae51889f6502a4d1e251f35d2f98c958a16d56d56a426f9af2b54f0aa34b"
+    },
+    {
+      "path": "audio_output\\experiments\\hmm\\hmm_f0_0.9.wav",
+      "bytes": 99564,
+      "sha256": "7667e9bb4d2dba0857b8e5231145659598a4fb5770a65ba4cf00a25290739317"
+    },
+    {
+      "path": "audio_output\\experiments\\hmm\\hmm_f0_1.1.wav",
+      "bytes": 99564,
+      "sha256": "d96b2a13dc6b43d20ad0661e4ca2cb0f3233c8fb65a4ca04ccbe4aa35ff10d10"
+    },
+    {
+      "path": "audio_output\\experiments\\prosody\\ba_duration_0.8x.wav",
+      "bytes": 9218,
+      "sha256": "fb8c569bbca69063ed78c9f61f2fefd34f66105f561c7d7f5f6f32a4dbcad664"
+    },
+    {
+      "path": "audio_output\\experiments\\prosody\\ba_duration_1.0x.wav",
+      "bytes": 11512,
+      "sha256": "9485dfa25b50199315fe2ddad2f4d65a5e991fcce5458599cbd7d5aea3a498d6"
+    },
+    {
+      "path": "audio_output\\experiments\\prosody\\ba_duration_1.2x.wav",
+      "bytes": 13806,
+      "sha256": "fe0be9f3d13e164c3d2170ed473795f11aca9dac66b9baf19c348cbe5d2888c7"
+    },
+    {
+      "path": "audio_output\\experiments\\prosody\\ba_pitch_+0st.wav",
+      "bytes": 11512,
+      "sha256": "9485dfa25b50199315fe2ddad2f4d65a5e991fcce5458599cbd7d5aea3a498d6"
+    },
+    {
+      "path": "audio_output\\experiments\\prosody\\ba_pitch_+2st.wav",
+      "bytes": 11512,
+      "sha256": "54867625167f1c9187e22d01f7941380e35e6c4c79cb46cb2471fa889184d282"
+    },
+    {
+      "path": "audio_output\\experiments\\prosody\\ba_pitch_-2st.wav",
+      "bytes": 11512,
+      "sha256": "453f10832c9074203920ec99ca3ee65e9d991fe574b3ba7b73ca24a2be9eaa37"
+    },
+    {
+      "path": "figures\\01_inventory_stats.png",
+      "bytes": 46711,
+      "sha256": "b4e01c800164bf306965f04dad54d13421903d5d7642f6e8d7b59e594fb157d1"
+    },
+    {
+      "path": "figures\\02_baseline_waveform_spectrogram.png",
+      "bytes": 1240465,
+      "sha256": "d81f2fbfd8b4b7fa44cfc02491fe2b39cca3c44614b7d6499e274ae67a0cfb69"
+    },
+    {
+      "path": "figures\\03_best_concat_waveform_spectrogram.png",
+      "bytes": 1224939,
+      "sha256": "09d933998fc5e38e1e0fb5ab876b3bff77df655261d7741b28e6a2741dee3b53"
+    },
+    {
+      "path": "figures\\04_boundary_before_after.png",
+      "bytes": 210155,
+      "sha256": "2e1478067ef48f9376563f7aea198f6a0e18525ab7f3a3d5fe333450d1eb68ee"
+    },
+    {
+      "path": "figures\\05_crossfade_experiment.png",
+      "bytes": 77495,
+      "sha256": "c0f31066dd4c67b584d07b80834553aa571b103e5d6ffb2a252fcd235993e96c"
+    },
+    {
+      "path": "figures\\06_unit_selection_cost.png",
+      "bytes": 33626,
+      "sha256": "8152820726af30b9f6541c3efd11b8699f1bbacaf7c2f32ae9e2df48db3e8027"
+    },
+    {
+      "path": "figures\\07_f0_verification.png",
+      "bytes": 158980,
+      "sha256": "4f37073d82ccc6210c4df246cfce2605efdb081c4b69ba3472f3170e82978fa4"
+    },
+    {
+      "path": "figures\\08_duration_experiment.png",
+      "bytes": 189278,
+      "sha256": "be666dd2c1535706a1b871314429bc67635adf8d7e9015d511d809920f3e5a50"
+    },
+    {
+      "path": "figures\\09_pitch_experiment.png",
+      "bytes": 188085,
+      "sha256": "8603a4236b0ace29c7b1c3436ffbe9fa8852a807931b6b872301d103d941c9de"
+    },
+    {
+      "path": "figures\\10_hmm_tracks.png",
+      "bytes": 237434,
+      "sha256": "281608830e076c3198ab20046d87d2c1536dfa94961b1fe0d9b233786e447807"
+    },
+    {
+      "path": "figures\\11_hmm_parameter_scaling.png",
+      "bytes": 361031,
+      "sha256": "1ed4005ea34ed38d74376382174adec2cc909e2010857004779ca11994abf387"
+    },
+    {
+      "path": "figures\\12_neural_spectrogram_S01.png",
+      "bytes": 743328,
+      "sha256": "598e035fe7aa2719b88436e596b21c1919abe31753a160c9bcd0970b58837eef"
+    },
+    {
+      "path": "figures\\12_neural_spectrogram_S02.png",
+      "bytes": 752600,
+      "sha256": "eaffc23d98e3ae284044f83823834775e9a9d86d538131cc04221aecdd3f2a5a"
+    },
+    {
+      "path": "figures\\12_neural_spectrogram_S03.png",
+      "bytes": 743921,
+      "sha256": "5824eaa1a246ca0f2bac49941be708f4155204b0043405bc9a369f95e7494888"
+    },
+    {
+      "path": "figures\\13_backend_objective_comparison.png",
+      "bytes": 46615,
+      "sha256": "1ab3dc9ac8fdc81dc699f50246270334bc9f6e76e98a748476725f89e6b1038c"
+    },
+    {
+      "path": "figures\\14_automated_proxy_evaluation.png",
+      "bytes": 50364,
+      "sha256": "f94d917f7b3592358c67ce0f64b05b93f17dfe72db59844cc0408f58ec29ce88"
+    },
+    {
+      "path": "results\\automated_proxy_clip_scores.csv",
+      "bytes": 2319,
+      "sha256": "c6429b2ce81b438421f10e5f31a11067336231637363a85486a89ed0ad3fc766"
+    },
+    {
+      "path": "results\\automated_proxy_summary.csv",
+      "bytes": 422,
+      "sha256": "3e475a987b3c657c99ea9ca5b1c5a766353ffc119534667d4789a66cd34cb117"
+    },
+    {
+      "path": "results\\backend_comparison.csv",
+      "bytes": 576,
+      "sha256": "71bb52b0253fe75e3acb1b1fd1b5dae905a8d19e0aa703bbd11aea9de60363d3"
+    },
+    {
+      "path": "results\\backend_comparison_automated_proxy.csv",
+      "bytes": 637,
+      "sha256": "abb9da61d72e47b2eabcdcdaa8aff394aee99d062656a04b5f163f2688d66481"
+    },
+    {
+      "path": "results\\blind_manifest_private.csv",
+      "bytes": 515,
+      "sha256": "04e85b41a9fc25f4d35514af660676a28b94362208556955aa6268c79a9fb872"
+    },
+    {
+      "path": "results\\candidate_costs.csv",
+      "bytes": 3366,
+      "sha256": "825173481220c733d8e8ec8aea5adfd27da93880fd2f001892c2e519c6ac5b31"
+    },
+    {
+      "path": "results\\concat_latency_runs.csv",
+      "bytes": 482,
+      "sha256": "7af27d5cabdd4513709066ce5a3bb0022a197a1f640e44192db874bdc28eeee8"
+    },
+    {
+      "path": "results\\concat_latency_summary.csv",
+      "bytes": 351,
+      "sha256": "400f8a264b04530494e9f5bb787723326dc79e3f17cbe10ac7ed216dba684a74"
+    },
+    {
+      "path": "results\\crossfade_results.csv",
+      "bytes": 401,
+      "sha256": "76e5f35e424a1d08e6cb1cfcba9a044162f321116d97e75002408643cc8b66f3"
+    },
+    {
+      "path": "results\\dp_verification.json",
+      "bytes": 380,
+      "sha256": "33c83e3461bc977fd9619e803b64cbe1cef6c1ecc07f2d8c86fb81909e18e3e5"
+    },
+    {
+      "path": "results\\experiment_summary.json",
+      "bytes": 1962,
+      "sha256": "5123817daecd8a8382419427e5009a7db48d6894d8b224dd4355a90e8654bb2d"
+    },
+    {
+      "path": "results\\hmm_latency_runs.csv",
+      "bytes": 424,
+      "sha256": "a540f109f16117d4032b4705f7276c7c8c25d1cdbe5b47024c8deeed5c6124aa"
+    },
+    {
+      "path": "results\\hmm_latency_summary.csv",
+      "bytes": 326,
+      "sha256": "9cb454830d6e16157bed67f0fc3ed8a91de31021abdfefd3e8ea03ecbab960a2"
+    },
+    {
+      "path": "results\\hmm_states_S01.csv",
+      "bytes": 2144,
+      "sha256": "9c428c1de38ebfdb7a9440e709090f8e83f9ace5f8d47a292ee1cf3450feb2e2"
+    },
+    {
+      "path": "results\\hmm_states_S02.csv",
+      "bytes": 2423,
+      "sha256": "95d426cad28fdd385bbc11f0af7e08f1c875d7073d20b69d82ebaf7007edd718"
+    },
+    {
+      "path": "results\\hmm_states_S03.csv",
+      "bytes": 2433,
+      "sha256": "c70b796789dace6b8e732857195ba0c73dc8605ca7381801ca75bfaa1d147822"
+    },
+    {
+      "path": "results\\hmm_state_sequence.csv",
+      "bytes": 2144,
+      "sha256": "9c428c1de38ebfdb7a9440e709090f8e83f9ace5f8d47a292ee1cf3450feb2e2"
+    },
+    {
+      "path": "results\\hmm_tracks.csv",
+      "bytes": 55195,
+      "sha256": "e506cbd7052054eff71ddb1fbe0807dcdb8f50d293728cdd448b88f274cc7de3"
+    },
+    {
+      "path": "results\\hmm_tracks_S01.csv",
+      "bytes": 55195,
+      "sha256": "e506cbd7052054eff71ddb1fbe0807dcdb8f50d293728cdd448b88f274cc7de3"
+    },
+    {
+      "path": "results\\hmm_tracks_S02.csv",
+      "bytes": 61202,
+      "sha256": "f3fe0118159829d28e67b0e5c60aa70ab0a9f8fe8befee9e2523c13e6e3530e7"
+    },
+    {
+      "path": "results\\hmm_tracks_S03.csv",
+      "bytes": 57620,
+      "sha256": "06130a79f044c719c5a756f664eb9046bd7de826900bf8032090668f5700cb6d"
+    },
+    {
+      "path": "results\\inventory_validation.csv",
+      "bytes": 5375,
+      "sha256": "419090fe89c0073f44a79554b166061e68ce67b81e866a4e7958cddcbcc8a305"
+    },
+    {
+      "path": "results\\neural_latency_runs.csv",
+      "bytes": 1695,
+      "sha256": "9ffd362a73fe68e329a412dba759d08725bdbd580647355a73caec1f3496afaa"
+    },
+    {
+      "path": "results\\neural_latency_summary.csv",
+      "bytes": 609,
+      "sha256": "355c35ae88daac0eddda7adab6d570791abec37cbea66d6e08cf7aa42546d441"
+    },
+    {
+      "path": "results\\normalized_sentences.csv",
+      "bytes": 606,
+      "sha256": "b45486f502d60f52e1a48eb2fb7b32ba2186c77612a52d8b90ff5e5d5999e6a0"
+    },
+    {
+      "path": "results\\project_validation.json",
+      "bytes": 115,
+      "sha256": "6f1af08c587c3d65ae7052496b7b3550a947e8bcc981a3cd70eaf8f35524f513"
+    },
+    {
+      "path": "results\\prosody_results.csv",
+      "bytes": 470,
+      "sha256": "aff588dae2d86f278a068074fb647d25f40c186d2d1d76a8652dd0ef41c2485b"
+    },
+    {
+      "path": "results\\ratings_template.csv",
+      "bytes": 165,
+      "sha256": "99d91e178dbf66272972e887b952b8627c41c837294c7036458f4fec44dc26b4"
+    },
+    {
+      "path": "results\\run_manifest.json",
+      "bytes": 15240,
+      "sha256": "e85cf9430d192b99c61c65c01eb4241b3c19dea9482214d0ebeb3aa97a6f995a"
+    },
+    {
+      "path": "results\\unit_selection_comparison.csv",
+      "bytes": 255,
+      "sha256": "637e9cd6d411c75e1b391546c591a3d124a67a3ad88ee0b3090aeae5bcaf0e7e"
+    },
+    {
+      "path": "results\\ratings_completed\\.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    }
+  ],
+  "limitations": [
+    "Inventory is synthetic neural speech and must be disclosed as such.",
+    "Subjective MOS/intelligibility require real listeners; template is prepared but scores are not fabricated.",
+    "HMM waveform is an educational parametric resynthesis; the required state/trajectory analysis is complete."
+  ]
+}

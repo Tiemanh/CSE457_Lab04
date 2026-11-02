@@ -1,0 +1,31 @@
+{
+  "dataset_name": "Lab 4 Vietnamese Queue TTS Synthetic Inventory",
+  "created_by": "edge-tts",
+  "voice": "vi-VN-HoaiMyNeural",
+  "source_output_format": "audio-24khz-48kbitrate-mono-mp3",
+  "delivered_format": "WAV mono 16000 Hz PCM 16-bit",
+  "units": 16,
+  "candidates_per_unit": 3,
+  "files": 48,
+  "candidate_settings": [
+    {
+      "candidate": 1,
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "target_rms": 0.075
+    },
+    {
+      "candidate": 2,
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "target_rms": 0.08
+    },
+    {
+      "candidate": 3,
+      "rate": "+6%",
+      "pitch": "+0Hz",
+      "target_rms": 0.085
+    }
+  ],
+  "disclosure": "Synthetic Vietnamese speech. Do not describe it as self-recorded human data."
+}

@@ -1,0 +1,2 @@
+models/mms-tts-vie/model.safetensors filter=lfs diff=lfs merge=lfs -text
+models/phowhisper-tiny/pytorch_model.bin filter=lfs diff=lfs merge=lfs -text

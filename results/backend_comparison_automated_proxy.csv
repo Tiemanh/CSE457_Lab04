@@ -1,0 +1,4 @@
+﻿method,latency_mean_s,storage_bytes,notes,intelligibility_asr_percent,naturalness_proxy_1_5,continuity_proxy_1_5,evaluation_type
+Concatenation,0.0415292666681731,514098,Best unit selection + cross-fade,79.62962962962963,4.181481481481481,3.466666666666667,AUTOMATED_PROXY_NOT_HUMAN_MOS
+HMM/parametric demo,0.2410359333269298,55195,Guided state/trajectory demo; waveform is illustrative,0.0,2.577777777777778,3.088888888888889,AUTOMATED_PROXY_NOT_HUMAN_MOS
+Neural MMS-VITS,0.090733573337396,145279055,"facebook/mms-tts-vie, local_files_only=True",76.66666666666667,2.907407407407408,3.111111111111111,AUTOMATED_PROXY_NOT_HUMAN_MOS

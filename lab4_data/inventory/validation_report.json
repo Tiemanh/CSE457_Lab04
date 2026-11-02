@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "wav_files": 48,
+  "unique_labels": 16,
+  "candidates_per_label": {
+    "ba": 3,
+    "bảy": 3,
+    "bốn": 3,
+    "chín": 3,
+    "hai": 3,
+    "hàng": 3,
+    "khách": 3,
+    "không": 3,
+    "một": 3,
+    "mời": 3,
+    "năm": 3,
+    "quầy": 3,
+    "sáu": 3,
+    "số": 3,
+    "tám": 3,
+    "đến": 3
+  },
+  "sample_rate_hz": 16000,
+  "channels": 1,
+  "subtype": "PCM_16",
+  "duration_s": {
+    "min": 0.193875,
+    "mean": 0.33332421874999996,
+    "max": 0.426375
+  },
+  "rms": {
+    "min": 0.07499981671571732,
+    "mean": 0.07999998268981774,
+    "max": 0.08500015735626221
+  },
+  "peak_max": 0.429046630859375,
+  "errors": []
+}

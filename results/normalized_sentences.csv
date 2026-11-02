@@ -1,0 +1,4 @@
+﻿sentence_id,input_text,normalized_tokens,spoken_text
+S01,Mời khách hàng số 23 đến quầy 5.,mời | khách | hàng | số | hai | ba | đến | quầy | năm,mời khách hàng số hai ba đến quầy năm
+S02,Mời khách hàng số 406 đến quầy 7.,mời | khách | hàng | số | bốn | không | sáu | đến | quầy | bảy,mời khách hàng số bốn không sáu đến quầy bảy
+S03,Mời khách hàng số 189 đến quầy 0.,mời | khách | hàng | số | một | tám | chín | đến | quầy | không,mời khách hàng số một tám chín đến quầy không
